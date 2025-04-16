@@ -96,3 +96,20 @@ class BankAccount {
 const input = document.querySelector(".task-input");
 const button = document.querySelector(".add-btn");
 const taskList = document.querySelector(".task-list");
+
+
+button.addEventListener("click", () => {
+  const task = input.value.trim(); 
+
+  if (task !== "") {
+   
+    const listItem = document.createElement("li");
+    listItem.textContent = task;
+
+    
+    taskList.appendChild(listItem);
+
+    
+    input.value = "";
+  }
+});
