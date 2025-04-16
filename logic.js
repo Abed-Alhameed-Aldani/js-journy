@@ -1,4 +1,4 @@
-function generateReports(students) {
+function generateReports(students) {  //	O(n * m)
 
     return students.map((student) => {
 
@@ -51,11 +51,13 @@ class BankAccount {
       this.balance = initialBalance;
     }
   
-    deposit(amount) {
+    deposit(amount) {  // O(1)
+
       this.balance += amount;
     }
   
-    withdraw(amount) {
+    withdraw(amount) {  /// O(1)
+
       if (amount <= this.balance) {
         this.balance -= amount;
       } else {
@@ -63,7 +65,8 @@ class BankAccount {
       }
     }
   
-    transferTo(anotherAccount, amount) {
+    transferTo(anotherAccount, amount) { /// O(1)
+
       if (amount <= this.balance) {
         this.withdraw(amount);
         anotherAccount.deposit(amount);
@@ -72,7 +75,8 @@ class BankAccount {
       }
     }
   
-    getSummary() {
+    getSummary() {  ///O(1)
+
       return `${this.ownerName}'s balance is $${this.balance}`;
     }
   }
