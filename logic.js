@@ -41,3 +41,17 @@ function generateReports(students) {
   
 
 
+// #QUESTION 2
+
+
+class BankAccount {
+    constructor(ownerName, initialBalance) {
+      this.ownerName = ownerName;
+
+      this.balance = initialBalance;
+    }
+  
+    deposit(amount) {
+      this.balance += amount;
+    }
+  
