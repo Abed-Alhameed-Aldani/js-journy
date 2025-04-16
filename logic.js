@@ -89,3 +89,10 @@ class BankAccount {
   //===============================================================================
 
   
+  //Question 3:
+
+
+
+const input = document.querySelector(".task-input");
+const button = document.querySelector(".add-btn");
+const taskList = document.querySelector(".task-list");
