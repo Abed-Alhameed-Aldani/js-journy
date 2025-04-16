@@ -30,28 +30,3 @@ function generateReports(students) {
   }
 
   
-
-  const students = [
-    { name: "Sara", scores: [90, 85, 92] },
-    { name: "Taha", scores: [70, 68, 72] },
-    { name: "Abed", scores: [100, 100, 100] },
-  ];
-  
-  console.log(generateReports(students));
-  
-
-
-// #QUESTION 2
-
-
-class BankAccount {
-    constructor(ownerName, initialBalance) {
-      this.ownerName = ownerName;
-
-      this.balance = initialBalance;
-    }
-  
-    deposit(amount) {
-      this.balance += amount;
-    }
-  
